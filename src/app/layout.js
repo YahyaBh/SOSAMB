@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         {/* Social Media Meta Tags (Facebook, Twitter, etc.) */}
         <meta property="og:title" content="SOS AMBULANCE Rabat-Salé - Service Ambulance 24/7" />
         <meta property="og:description" content="SOS AMBULANCE à Rabat-Salé vous offre un service rapide et fiable, disponible 24h/24 et 7j/7 pour toutes vos urgences médicales." />
-        <meta property="og:image" content="/Assers/VB4.svg" /> {/* Use a larger image for social media */}
+        <meta property="og:image" content="/Assets/VB4.svg" />
         <meta property="og:url" content="https://sosamb.com" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="SOS AMBULANCE Rabat-Salé - Service Ambulance 24/7" />
         <meta name="twitter:description" content="Service d'ambulance rapide et fiable à Rabat-Salé, disponible 24h/24 et 7j/7." />
-        <meta name="twitter:image" content="/Assers/VB4.svg" />
+        <meta name="twitter:image" content="/Assets/VB4.svg" />
 
         {/* Structured Data for SEO (Schema.org) */}
         <script type="application/ld+json">

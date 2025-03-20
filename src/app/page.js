@@ -20,10 +20,10 @@ export default function Home() {
         </div>
 
         <div className="links">
-          <a>Acceuil</a>
-          <a>Nos Services</a>
-          <a>À Propos</a>
-          <a>Contact</a>
+          <a href="#home">Acceuil</a>
+          <a href="#services">Nos Services</a>
+          <a href="#about">À Propos</a>
+          <a href="#contact">Contact</a>
         </div>
 
         <div className="call">
@@ -46,7 +46,7 @@ export default function Home() {
       </nav>
 
 
-      <header>
+      <header id="home">
         <div className="container">
           <div className="left">
             <h3>SOS Rabat/Salé AMBULANCE </h3>
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="services">
+      <section className="services" id="services">
         <div className="container">
           <div className="card">
             <img src="/Assets/AmbIco.svg " alt="ambulance" />
@@ -102,7 +102,7 @@ export default function Home() {
       </section>
 
 
-      <section className="gallery">
+      <section className="gallery" id="about">
 
         <div className="title">
           <h2>Nos Interventions en Images</h2>
@@ -230,7 +230,7 @@ export default function Home() {
 
       </section>
 
-      <section className="contact">
+      <section className="contact" id="contact">
 
         <div className="title">
           <h2>📞 Contactez-nous</h2>
