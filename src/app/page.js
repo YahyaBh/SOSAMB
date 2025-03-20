@@ -50,7 +50,7 @@ export default function Home() {
         <div className="container">
           <div className="left">
             <h3>SOS Rabat/Salé AMBULANCE </h3>
-            <h1>Service d'ambulance rapide et fiable, disponible 24h/24 et 7j/7. </h1>
+            <h1>Service d'ambulance rapide et fiable, disponible <span>24h/24 et 7j/7.</span> </h1>
             <p>
               Besoin d’une intervention d’urgence ? Nous assurons un transport sécurisé et une assistance immédiate.
             </p>
@@ -153,7 +153,7 @@ export default function Home() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
-                <i className="fa fa-star empty"></i>
+                <i className="fa fa-star half"></i>
               </div>
 
               <div className="number">
@@ -184,18 +184,18 @@ export default function Home() {
               </div>
 
               <div className="number">
-                <span>4.5/5</span>
+                <span>5/5</span>
               </div>
             </div>
 
-            <p>Excellent service Ambulanciers très professionnel l équipe est réellement génial un grand merci 🙏🏻</p>
+            <p>Service rapide tbarkelah 🙏🏾🙏🏾.Bonne continuation</p>
 
             <div className="footer">
               <div className="avatar">
-                <span>KA</span>
+                <span>MN</span>
               </div>
               <div className="info">
-                <h3>Khalid Arraji</h3>
+                <h3>Mehdi Noujaima</h3>
               </div>
             </div>
           </div>
@@ -207,22 +207,22 @@ export default function Home() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
-                <i className="fa fa-star empty"></i>
+                <i className="fa fa-star .empty"></i>
               </div>
 
               <div className="number">
-                <span>4.5/5</span>
+                <span>4/5</span>
               </div>
             </div>
 
-            <p>Excellent service Ambulanciers très professionnel l équipe est réellement génial un grand merci 🙏🏻</p>
+            <p>Tres bon service,equipe comprehensive, arrivé a lheure, meme le prix est convenable.</p>
 
             <div className="footer">
               <div className="avatar">
-                <span>KA</span>
+                <span>AO</span>
               </div>
               <div className="info">
-                <h3>Khalid Arraji</h3>
+                <h3>Azelarab Ouglaa</h3>
               </div>
             </div>
           </div>
@@ -241,8 +241,7 @@ export default function Home() {
 
         <div className="container">
           <div className="left">
-            <iframe className="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=&amp;height=&amp;hl=en&amp;q=Bloc 11 numéro 776 Hay Essalam, 11003 SOS Rabat/Salé AMBULANCE&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-
+            <iframe className="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=&amp;height=&amp;hl=en&amp;q=Bloc 11 numéro 776 Hay Essalam, 11003 SOS Rabat/Salé AMBULANCE&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             <div className="address">
               <h3>📍 Adresse : Bloc 11 numéro 776 Hay Essalam, 11003 </h3>
               <h3>📞 Téléphone : +212 0656561701</h3>
