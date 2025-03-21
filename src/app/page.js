@@ -1,9 +1,11 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./page.scss";
 
 import { FaWhatsapp } from "react-icons/fa";
 import SplitText from "./textEf";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 export default function Home() {
   const [isResponsive, setIsResponsive] = useState(false);
@@ -11,6 +13,13 @@ export default function Home() {
   const toggleNavbar = () => {
     setIsResponsive(!isResponsive);
   };
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+    });
+  }, [])
 
   return (
     <>
@@ -88,14 +97,14 @@ export default function Home() {
           </div>
 
           <div className="right">
-            <img src="/Assets/Amb.svg" alt="ambulance" />"
+            <img src="/Assets/Amb.svg" alt="ambulance" data-aos="fade-left" />
           </div>
         </div>
       </header>
 
       <section className="services" id="services">
         <div className="container">
-          <div className="card">
+          <div className="card" data-aos="zoom-in-up">
             <img src="/Assets/AmbIco.svg " alt="ambulance" />
             <div className="content">
               <h3>Service d'ambulance rapide et fiable</h3>
@@ -105,7 +114,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="zoom-in-up" data-aos-delay="100">
             <img src="/Assets/EmerIco.svg " alt="ambulance" />
             <div className="content">
               <h3>Service d'ambulance rapide et fiable</h3>
@@ -115,7 +124,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="zoom-in-up" data-aos-delay="200">
             <img src="/Assets/AssistIco.svg " alt="ambulance" />
             <div className="content">
               <h3>Service d'ambulance rapide et fiable</h3>
@@ -136,28 +145,28 @@ export default function Home() {
         </div>
 
         <div className="imageContainer">
-          <div className="div1">
-            <img src="/Assets/VB1.svg" alt="ambulance1" />
+          <div className="div1" data-aos="zoom-out" data-aos-delay="">
+            <img src="/Assets/VB1.svg" alt="ambulance1"  />
           </div>
-          <div className="div2">
+          <div className="div2" data-aos="zoom-out" data-aos-delay="100">
             <img src="/Assets/VB2.svg" alt="ambulance2" />
           </div>
-          <div className="div3">
+          <div className="div3" data-aos="zoom-out" data-aos-delay="150">
             <img src="/Assets/VB3.svg" alt="ambulance3" />
           </div>
-          <div className="div4">
+          <div className="div4" data-aos="zoom-out" data-aos-delay="200">
             <img src="/Assets/VB4.svg" alt="ambulance4" />
           </div>
-          <div className="div5">
+          <div className="div5" data-aos="zoom-out" data-aos-delay="250">
             <img src="/Assets/VB5.svg" alt="ambulance5" />
           </div>
-          <div className="div6">
+          <div className="div6" data-aos="zoom-out" data-aos-delay="300">
             <img src="/Assets/VB6.svg" alt="ambulance6" />
           </div>
-          <div className="div7">
+          <div className="div7" data-aos="zoom-out" data-aos-delay="350">
             <img src="/Assets/VB7.svg" alt="ambulance7" />
           </div>
-          <div className="div8">
+          <div className="div8" data-aos="zoom-out" data-aos-delay="400">
             <img src="/Assets/VB8.svg" alt="ambulance8" />
           </div>
         </div>
@@ -172,7 +181,7 @@ export default function Home() {
         </div>
 
         <div className="feed-container">
-          <div className="card">
+          <div className="card" data-aos="fade-up" >
             <div className="header">
               <div className="rating">
                 <i className="fa fa-star"></i>
@@ -199,7 +208,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="fade-up" data-aos-delay="50">
             <div className="header">
               <div className="rating">
                 <i className="fa fa-star"></i>
@@ -226,7 +235,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="fade-up" data-aos-delay="100">
             <div className="header">
               <div className="rating">
                 <i className="fa fa-star"></i>
