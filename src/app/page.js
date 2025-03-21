@@ -9,6 +9,8 @@ import 'aos/dist/aos.css'
 
 export default function Home() {
   const [isResponsive, setIsResponsive] = useState(false);
+  const [imageCont, setImageCont] = useState('')
+
 
   const toggleNavbar = () => {
     setIsResponsive(!isResponsive);
@@ -19,7 +21,19 @@ export default function Home() {
       duration: 1000,
       once: true,
     });
-  }, [])
+  }, []);
+
+
+  useEffect(() => {
+    if (imageCont !== '') {
+      window.document.body.style.overflow = `hidden`
+    } else {
+      window.document.body.style.overflow = `auto`
+    }
+  }, [imageCont])
+
+
+
 
   return (
     <>
@@ -107,7 +121,7 @@ export default function Home() {
           <div className="card" data-aos="zoom-in-up">
             <img src="/Assets/AmbIco.svg " alt="ambulance" />
             <div className="content">
-              <h3>Service d'ambulance rapide et fiable</h3>
+              <h3>Transport médicalisé </h3>
               <p>
                 Déplacement sécurisé des patients
               </p>
@@ -117,9 +131,9 @@ export default function Home() {
           <div className="card" data-aos="zoom-in-up" data-aos-delay="100">
             <img src="/Assets/EmerIco.svg " alt="ambulance" />
             <div className="content">
-              <h3>Service d'ambulance rapide et fiable</h3>
+              <h3>Intervention d'urgence</h3>
               <p>
-                Nous assurons un transport sécurisé et une assistance immédiate.
+                Assistance immédiate en cas de besoin
               </p>
             </div>
           </div>
@@ -127,9 +141,9 @@ export default function Home() {
           <div className="card" data-aos="zoom-in-up" data-aos-delay="200">
             <img src="/Assets/AssistIco.svg " alt="ambulance" />
             <div className="content">
-              <h3>Service d'ambulance rapide et fiable</h3>
+              <h3>Assistance aux patients</h3>
               <p>
-                Nous assurons un transport sécurisé et une assistance immédiate.
+                Prise en charge et soins sur place
               </p>
             </div>
           </div>
@@ -144,29 +158,37 @@ export default function Home() {
           <p>Découvrez nos services en action et notre engagement envers votre sécurité.</p>
         </div>
 
-        <div className="imageContainer">
-          <div className="div1" data-aos="zoom-out" data-aos-delay="">
-            <img src="/Assets/VB1.svg" alt="ambulance1"  />
+
+        {imageCont && <div onClick={() => setImageCont('')} className="imageOverContainer">
+          <div className="imageCont">
+            <img src={imageCont} alt="ambulance1" />
           </div>
-          <div className="div2" data-aos="zoom-out" data-aos-delay="100">
+        </div>}
+
+        <div className="imageContainer">
+
+          <div className="div1" data-aos="zoom-out" onClick={() => setImageCont('/Assets/VB1.svg')}>
+            <img src="/Assets/VB1.svg" alt="ambulance1" />
+          </div>
+          <div className="div2" data-aos="zoom-out" data-aos-delay="100" onClick={() => setImageCont('/Assets/VB2.svg')}>
             <img src="/Assets/VB2.svg" alt="ambulance2" />
           </div>
-          <div className="div3" data-aos="zoom-out" data-aos-delay="150">
+          <div className="div3" data-aos="zoom-out" data-aos-delay="150" onClick={() => setImageCont('/Assets/VB3.svg')}>
             <img src="/Assets/VB3.svg" alt="ambulance3" />
           </div>
-          <div className="div4" data-aos="zoom-out" data-aos-delay="200">
+          <div className="div4" data-aos="zoom-out" data-aos-delay="200" onClick={() => setImageCont('/Assets/VB4.svg')}>
             <img src="/Assets/VB4.svg" alt="ambulance4" />
           </div>
-          <div className="div5" data-aos="zoom-out" data-aos-delay="250">
+          <div className="div5" data-aos="zoom-out" data-aos-delay="250" onClick={() => setImageCont('/Assets/VB5.svg')}>
             <img src="/Assets/VB5.svg" alt="ambulance5" />
           </div>
-          <div className="div6" data-aos="zoom-out" data-aos-delay="300">
+          <div className="div6" data-aos="zoom-out" data-aos-delay="300" onClick={() => setImageCont('/Assets/VB6.svg')}>
             <img src="/Assets/VB6.svg" alt="ambulance6" />
           </div>
-          <div className="div7" data-aos="zoom-out" data-aos-delay="350">
+          <div className="div7" data-aos="zoom-out" data-aos-delay="350" onClick={() => setImageCont('/Assets/VB7.svg')}>
             <img src="/Assets/VB7.svg" alt="ambulance7" />
           </div>
-          <div className="div8" data-aos="zoom-out" data-aos-delay="400">
+          <div className="div8" data-aos="zoom-out" data-aos-delay="400" onClick={() => setImageCont('/Assets/VB8.svg')}>
             <img src="/Assets/VB8.svg" alt="ambulance8" />
           </div>
         </div>
@@ -311,12 +333,12 @@ export default function Home() {
         <div className="container">
           <div className="left">
             <img src="logo.svg" alt="logo2" />
-            <p>SAS Rabat Ambulance est un service spécialisé dans le transport sanitaire des patients nécessitant des soins et un transport adapté à leur état de santé. Que ce soit en urgence ou pour des consultations médicales, nous offrons un transport médicalisé sécurisé grâce à une flotte d'ambulances et de VSL (véhicules sanitaires légers).</p>
+            <p>SOS Rabat Ambulance est un service spécialisé dans le transport sanitaire des patients nécessitant des soins et un transport adapté à leur état de santé. Que ce soit en urgence ou pour des consultations médicales, nous offrons un transport médicalisé sécurisé grâce à une flotte d'ambulances et de VSL (véhicules sanitaires légers).</p>
           </div>
 
           <div className="right">
-            <h3>© GO ASSISTANCE MEDICALE 2025</h3>
-            <h3>© Developed and Maintained By <a href="https://webinadigital.com/" target="_blank">Webina Digital</a> </h3>
+            <h3> GO ASSISTANCE MEDICALE 2025 ©</h3>
+            <h3> Developed and Maintained By <a href="https://webinadigital.com/" target="_blank">Webina Digital</a> ©</h3>
           </div>
         </div>
       </footer>
