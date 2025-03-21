@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./page.scss";
 
 import { FaWhatsapp } from "react-icons/fa";
+import SplitText from "./textEf";
 
 export default function Home() {
   const [isResponsive, setIsResponsive] = useState(false);
@@ -27,7 +28,7 @@ export default function Home() {
         </div>
 
         <div className="call">
-          <button>Appeler Maintenant</button>
+          <a href="tel:+2120656561701">Appeler Maintenant</a>
         </div>
 
         <div className="toggle" onClick={toggleNavbar}>
@@ -50,14 +51,39 @@ export default function Home() {
         <div className="container">
           <div className="left">
             <h3>SOS Rabat/Salé AMBULANCE </h3>
-            <h1>Service d'ambulance rapide et fiable, disponible <span>24h/24 et 7j/7.</span> </h1>
+            <h1>
+              <SplitText
+                text="Service d'ambulance rapide et fiable, disponible"
+                className="text-2xl font-semibold text-center"
+                delay={20}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+              />
+
+
+              <span className="colored">
+                <SplitText
+                  text="24h/24 et 7j/7."
+                  className="text-2xl font-semibold text-center"
+                  delay={60}
+                  animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                  animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                  easing="easeOutCubic"
+                  threshold={0.2}
+                  rootMargin="-50px"
+                />
+              </span>
+            </h1>
             <p>
               Besoin d’une intervention d’urgence ? Nous assurons un transport sécurisé et une assistance immédiate.
             </p>
 
             <div className="btns">
-              <button className="btn2"><FaWhatsapp /> Contacter Nous </button>
-              <button className="btn1">Appeler Maintenant</button>
+              <a href="https://wa.link/5uq4en" target="_blank" className="btn2"><FaWhatsapp /> Contacter Nous </a>
+              <a href="tel:+2120656561701" className="btn1">Appeler Maintenant</a>
             </div>
           </div>
 
