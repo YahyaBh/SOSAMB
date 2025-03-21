@@ -237,7 +237,7 @@ export default function Home() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
-                <i className="fa fa-star empty"></i>
+                <i className="fa fa-star"></i>
               </div>
 
               <div className="number">
