@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         {/* Basic SEO Meta Tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="SOS AMBULANCE à Rabat-Salé propose un service d'ambulance rapide, fiable, et disponible 24h/24 et 7j/7 pour vos urgences médicales." />
-        <meta name="keywords" content="Service d'ambulance, Ambulance rapide, Ambulance fiable, Urgence médicale, Rabat-Salé, Ambulance 24h/24, Ambulance Rabat, Ambulance Salé, Transport médical, Intervention rapide, Assistance médicale d'urgence." />
+        <meta name="keywords" content="ambulance Rabat salé, Consultation a domicile, Transport ambulance,Hôpital ,Cliniqu" />
         <meta name="author" content="WEBINA DIGITAL" />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#16356e" />
@@ -33,16 +33,24 @@ export default function RootLayout({ children }) {
         {/* Social Media Meta Tags (Facebook, Twitter, etc.) */}
         <meta property="og:title" content="SOS AMBULANCE Rabat-Salé - Service Ambulance 24/7" />
         <meta property="og:description" content="SOS AMBULANCE à Rabat-Salé vous offre un service rapide et fiable, disponible 24h/24 et 7j/7 pour toutes vos urgences médicales." />
+        
         <meta property="og:image" content="/Assets/VB4.svg" />
         <meta property="og:url" content="https://sosamb.com" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="SOS AMBULANCE Rabat-Salé" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/svg" />
+        <meta property="og:image:alt" content="Logo de SOS AMBULANCE Rabat-Salé" />
+
         
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="SOS AMBULANCE Rabat-Salé - Service Ambulance 24/7" />
         <meta name="twitter:description" content="Service d'ambulance rapide et fiable à Rabat-Salé, disponible 24h/24 et 7j/7." />
+        <meta name="twitter:site" content="@sosambulance" />
+        <meta name="twitter:creator" content="@sosambulance" />
         <meta name="twitter:image" content="/Assets/VB4.svg" />
 
         {/* Structured Data for SEO (Schema.org) */}
@@ -53,6 +61,7 @@ export default function RootLayout({ children }) {
             "@type": "Organization",
             "name": "SOS AMBULANCE Rabat-Salé",
             "description": "Service d'ambulance rapide et fiable, disponible 24h/24 et 7j/7 à Rabat-Salé.",
+            "keyword": "ambulance Rabat salé, Consultation a domicile, Transport ambulance,Hôpital ,Cliniqu",
             "url": "https://sosamb.com",
             "logo": "https://sosamb.com/favicon.ico",
             "contactPoint": {
