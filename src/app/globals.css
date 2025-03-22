@@ -7,6 +7,12 @@
   scroll-margin-top: 20dvh;
 }
 
+@media screen and (max-width: 900px) {
+  * {
+    scroll-margin-top: 10dvh;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -15,4 +21,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-

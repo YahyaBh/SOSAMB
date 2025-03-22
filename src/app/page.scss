@@ -1,4 +1,3 @@
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -103,6 +102,17 @@ nav {
 
         .toggle {
             display: block;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+                width: 90%;
+            }
         }
     }
 }
