@@ -654,6 +654,8 @@ footer {
         justify-content: space-between;
         align-items: center;
         max-width: 1400px;
+        padding: 1em;
+        box-sizing: border-box;
 
         .left {
             flex-basis: 50%;
@@ -662,6 +664,10 @@ footer {
             align-items: flex-start;
             flex-direction: column;
             gap: 20px;
+
+            img {
+                width: 100%;
+            }
 
             p {
                 font-size: 0.8em;
