@@ -73,7 +73,7 @@ export default function Home() {
       <header id="home">
         <div className="container">
           <div className="left">
-            <h3>SOS Rabat/Salé AMBULANCE </h3>
+            <h3>SOS Ambulance Rabat/Salé</h3>
             <h1>
               <SplitText
                 text="Service d'ambulance rapide et fiable, disponible"
