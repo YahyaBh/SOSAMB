@@ -106,7 +106,7 @@ export default function Home() {
 
             <div className="btns">
               <a href="https://wa.link/5uq4en" target="_blank" className="btn2"><FaWhatsapp /> Contacter Nous </a>
-              <a href="tel:+2120656561701" className="btn1">Appeler Maintenant</a>
+              <a href="tel:+212656561701" className="btn1">Appeler Maintenant</a>
             </div>
           </div>
 
@@ -337,7 +337,6 @@ export default function Home() {
           </div>
 
           <div className="right">
-            <h3> GO ASSISTANCE MEDICALE 2025 ©</h3>
             <h3> Developed and Maintained By <a href="https://webinadigital.com/" target="_blank">Webina Digital</a> ©</h3>
           </div>
         </div>
