@@ -337,6 +337,7 @@ export default function Home() {
           </div>
 
           <div className="right">
+            <h3> All Rights Reserved <a href="https://www.ambulancerabatsale.com/" target="_self">Ambulance Rabat/Salé</a> ©</h3>
             <h3> Developed and Maintained By <a href="https://webinadigital.com/" target="_blank">Webina Digital</a> ©</h3>
           </div>
         </div>
