@@ -54,6 +54,14 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="/Assets/VB4.svg" />
 
         {/* Structured Data for SEO (Schema.org) */}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16912349818"/>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'AW-16912349818');
+      </script>
         <script type="application/ld+json">
           {`
           {
