@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const poppinsFont = Poppins({
@@ -53,15 +54,24 @@ export default function RootLayout({ children }) {
         <meta name="twitter:creator" content="@sosambulance" />
         <meta name="twitter:image" content="/Assets/VB4.svg" />
 
-        {/* Structured Data for SEO (Schema.org) */}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16912349818"/>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+
+{/* Google tag (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16912349818"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16912349818');
+          `}
+        </Script>
       
-        gtag('config', 'AW-16912349818');
-      </script>
+    
+        {/* Structured Data for SEO (Schema.org) */}
+
         <script type="application/ld+json">
           {`
           {
