@@ -47,8 +47,8 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="SOS AMBULANCE à Rabat-Salé vous offre un service rapide et fiable, disponible 24h/24 et 7j/7 pour toutes vos urgences médicales."
         />
-        <meta property="og:image" content="https://sosamb.com/Assets/VB4.svg" />
-        <meta property="og:url" content="https://sosamb.com" />
+        <meta property="og:image" content="https://ambulancerabatsale.com/Assets/VB4.svg" />
+        <meta property="og:url" content="https://ambulancerabatsale.com" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
         <meta
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:creator" content="@sosambulance" />
         <meta
           name="twitter:image"
-          content="https://sosamb.com/Assets/VB4.svg"
+          content="https://ambulancerabatsale.com/Assets/VB4.svg"
         />
 
         {/* Google Tag */}
@@ -102,8 +102,8 @@ export default function RootLayout({ children }) {
             name: "SOS AMBULANCE Rabat-Salé",
             description:
               "Service d'ambulance rapide et fiable, disponible 24h/24 et 7j/7 à Rabat-Salé.",
-            url: "https://sosamb.com",
-            logo: "https://sosamb.com/favicon.ico",
+            url: "https://ambulancerabatsale.com",
+            logo: "https://ambulancerabatsale.com/favicon.ico",
             contactPoint: {
               "@type": "ContactPoint",
               telephone: "+212-0656561701",
@@ -111,8 +111,8 @@ export default function RootLayout({ children }) {
               availableLanguage: "French",
             },
             sameAs: [
-              "https://www.facebook.com/yourambulanceservice",
-              "https://twitter.com/yourambulanceservice",
+              "https://www.facebook.com/ambulancerabatsale",
+              "https://twitter.com/ambulancerabatsale",
             ],
           })}
         </script>
