@@ -73,8 +73,8 @@ export default function Home() {
             </p>
 
             <div className="btns">
-              <a href="https://wa.link/5uq4en" target="_blank" className="btn2"><FaWhatsapp /> Contacter Nous </a>
-              <a href="tel:+212656561701" className="btn1">Appeler Maintenant</a>
+              <a href="https://wa.me/212752921397" target="_blank" className="btn2"><FaWhatsapp /> Contacter Nous </a>
+              <a href="tel:+2120752921397" className="btn1">Appeler Maintenant</a>
             </div>
           </div>
 
@@ -269,7 +269,7 @@ export default function Home() {
             <iframe className="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=&amp;height=&amp;hl=en&amp;q=Bloc 11 numéro 776 Hay Essalam, 11003 SOS Rabat/Salé AMBULANCE&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             <div className="address">
               <h3>📍 Adresse : Bloc 11 numéro 776 Hay Essalam, 11003 , Rabat-Salé</h3>
-              <h3>📞 Téléphone : +212 0656561701</h3>
+              <h3>📞 Téléphone : +212 0752921397</h3>
               <h3>📧 Email : contact@sosambulance.com</h3>
             </div>
           </div>

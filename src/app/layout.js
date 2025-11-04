@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
             logo: "https://ambulancerabatsale.com/favicon.ico",
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+212-0656561701",
+              telephone: "+212-0752921397",
               contactType: "customer service",
               availableLanguage: "French",
             },

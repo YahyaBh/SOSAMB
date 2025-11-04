@@ -19,12 +19,12 @@ export default function ContactPage() {
             <div className="left">
               <h2>Nos coordonnées</h2>
               <div className="lines">
-                <div className="icon-line"><span className="ico">📞</span><div><strong>Téléphone</strong><p><a href="tel:+2120656561701">+212 0656561701</a></p></div></div>
+                <div className="icon-line"><span className="ico">📞</span><div><strong>Téléphone</strong><p><a href="tel:+2120752921397">+212 0752921397</a></p></div></div>
                 <div className="icon-line"><span className="ico">✉️</span><div><strong>Email</strong><p><a href="mailto:contact@sosambulance.com">contact@sosambulance.com</a></p></div></div>
                 <div className="icon-line"><span className="ico">📍</span><div><strong>Adresse</strong><p>Bloc 11 numéro 776 Hay Essalam, 11003, Rabat-Salé</p></div></div>
               </div>
               <div className="actions">
-                <a className="btn-primary" href="tel:+2120656561701">Appeler maintenant</a>
+                <a className="btn-primary" href="tel:+2120752921397">Appeler maintenant</a>
                 <a className="btn-secondary" href="mailto:contact@sosambulance.com">Envoyer un email</a>
               </div>
             </div>

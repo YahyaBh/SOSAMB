@@ -48,7 +48,7 @@ export default function Nav() {
       </div>
 
       <div className="call">
-        <a href="tel:+2120656561701">Appeler Maintenant</a>
+        <a href="tel:+2120752921397">Appeler Maintenant</a>
       </div>
 
       <button
@@ -88,7 +88,7 @@ export default function Nav() {
           <Link href="/faq" onClick={() => setIsResponsive(false)}>FAQ</Link>
           <Link href="/blogs" onClick={() => setIsResponsive(false)}>Blogs</Link>
           <Link href="/contact" onClick={() => setIsResponsive(false)}>Contact</Link>
-          <a className="btn" href="tel:+2120656561701">Appeler Maintenant</a>
+          <a className="btn" href="tel:+2120752921397">Appeler Maintenant</a>
         </div>
       )}
     </nav>

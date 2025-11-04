@@ -43,7 +43,7 @@ export default function TransportMedicalisePage() {
                   </div>
                 </div>
 
-                <a className="btn-primary wide" href="tel:+2120656561701">Demander un transport</a>
+                <a className="btn-primary wide" href="tel:+2120752921397">Demander un transport</a>
               </div>
             </div>
             <div className="col">

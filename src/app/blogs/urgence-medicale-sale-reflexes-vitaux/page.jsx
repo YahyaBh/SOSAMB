@@ -6,7 +6,7 @@ export const metadata = {
     "Trois réflexes simples pour agir vite et en sécurité à Salé en attendant l'ambulance.",
 };
 
-const PHONE = "+2120656561701";
+const PHONE = "+2120752921397";
 
 export default function BlogPost() {
   return (
@@ -32,7 +32,7 @@ export default function BlogPost() {
             <li style={{ marginBottom: "0.25rem" }}>
               Ambulance privée :{" "}
               <a href={`tel:${PHONE}`} style={{ color: "#2563eb", textDecoration: "underline" }}>
-                +212 6 56 56 17 01
+                +212 7 52 92 13 97
               </a>{" "}
               pour un transport rapide et orienté.
             </li>
@@ -81,7 +81,7 @@ export default function BlogPost() {
             onMouseOver={{ backgroundColor: "#1d4ed8" }}
             onMouseOut={{ backgroundColor: "#2563eb" }}
           >
-            Appeler : +212 6 56 56 17 01
+            Appeler : +212 7 52 92 13 97
           </a>
         </section>
 

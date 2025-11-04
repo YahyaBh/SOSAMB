@@ -43,7 +43,7 @@ export default function InterventionUrgencePage() {
                   </div>
                 </div>
 
-                <a className="btn-primary wide" href="tel:+2120656561701">Demander une intervention</a>
+                <a className="btn-primary wide" href="tel:+2120752921397">Demander une intervention</a>
               </div>
             </div>
             <div className="col">
