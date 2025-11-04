@@ -1,3 +1,6 @@
+/* FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -112,6 +115,63 @@ a {
 }
 .services .card:focus-visible { outline: 2px solid rgba(22,53,110,.28); outline-offset: 2px; border-radius: 12px; }
 
+/* Navbar styles - moved from page.scss to work on all pages */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff7d;
+  backdrop-filter: blur(10px);
+  z-index: 99;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: auto;
+  height: auto;
+}
+
+nav .links {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 34px;
+  font-weight: 500;
+}
+
+nav .links a {
+  transition: all 0.3s ease;
+}
+
+nav .links a:hover {
+  color: #d32f2f;
+  opacity: 0.6;
+}
+
+nav .call a {
+  border-radius: 10px;
+  background-color: #d32f2f;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+nav .call a:hover {
+  background-color: #c62828;
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
 /* Global navbar responsiveness so hamburger works on all pages */
 nav .toggle {
   display: none;
@@ -143,6 +203,16 @@ nav .hamburger.active span:nth-child(3) { transform: translateY(-9px) rotate(-45
   nav .links,
   nav .call {
     display: none !important;
+  }
+
+  nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  nav .logo img {
+    width: 90%;
   }
 
   nav .dropdown {
@@ -193,4 +263,69 @@ nav .dropdown .services-trigger .arrow {
 }
 nav .dropdown .services-trigger .arrow.open {
   transform: rotate(-135deg);
+}
+
+/* Footer styles - moved from page.scss to work on all pages */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em;
+  background-color: #f4f4f4;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+footer .left {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .left img {
+  width: 100%;
+}
+
+footer .left p {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+footer .right {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+footer .right h3 {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+footer .right h3 a {
+  color: #8d7d31;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  footer .right {
+    padding: 1em !important;
+    text-align: center;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
 }

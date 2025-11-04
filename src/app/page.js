@@ -266,7 +266,7 @@ export default function Home() {
 
         <div className="container">
           <div className="left">
-            <iframe className="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=&amp;height=&amp;hl=en&amp;q=Bloc 11 numéro 776 Hay Essalam, 11003 SOS Rabat/Salé AMBULANCE&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <iframe className="gmap_iframe" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=&amp;height=&amp;hl=en&amp;q=Bloc 11 numéro 776 Hay Essalam, 11003 SOS Rabat/Salé AMBULANCE&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             <div className="address">
               <h3>📍 Adresse : Bloc 11 numéro 776 Hay Essalam, 11003 , Rabat-Salé</h3>
               <h3>📞 Téléphone : +212 0752921397</h3>
