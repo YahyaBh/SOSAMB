@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { CONTACT_INFO } from "@/constants/contact";
 
 const poppinsFont = Poppins({
   variable: "--poppins",
@@ -63,7 +64,7 @@ export default function RootLayout({ children }) {
     logo: "https://ambulancerabatsale.com/favicon.ico",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+212-0752921397",
+      telephone: CONTACT_INFO.phone,
       contactType: "customer service",
       availableLanguage: "French",
     },

@@ -1,12 +1,11 @@
 import Link from "next/link";
+import { CONTACT_INFO } from "@/constants/contact";
 
 export const metadata = {
   title: "Combien Coûte un Transport en Ambulance à Salé ? Le Guide des Tarifs",
   description:
     "Découvrez les tarifs des transports en ambulance à Salé, les facteurs qui influencent les prix et nos conseils pour bien anticiper les coûts.",
 };
-
-const PHONE = "+2120752921397";
 
 export default function BlogPost() {
   return (
@@ -151,7 +150,7 @@ export default function BlogPost() {
           </p>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "flex-start" }}>
             <a
-              href={`tel:${PHONE}`}
+              href={`tel:${CONTACT_INFO.phone}`}
               style={{
                 display: "inline-block",
                 backgroundColor: "#2563eb",
@@ -166,7 +165,7 @@ export default function BlogPost() {
               onMouseOver={{ backgroundColor: "#1d4ed8" }}
               onMouseOut={{ backgroundColor: "#2563eb" }}
             >
-              Devis Gratuit : +212 7 52 92 13 97
+              Devis Gratuit : {CONTACT_INFO.phoneDisplay}
             </a>
             <div style={{ display: "flex", alignItems: "center", color: "#374151", fontSize: "0.9rem" }}>
               <span style={{ marginRight: "0.5rem" }}>📞</span>

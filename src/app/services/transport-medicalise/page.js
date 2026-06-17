@@ -1,3 +1,5 @@
+import { CONTACT_INFO } from "@/constants/contact";
+
 export const metadata = {
   title: "Transport médicalisé | SOS Ambulance Rabat-Salé",
   description: "Transport sanitaire sécurisé avec équipement médical et équipe formée.",
@@ -43,7 +45,7 @@ export default function TransportMedicalisePage() {
                   </div>
                 </div>
 
-                <a className="btn-primary wide" href="tel:+2120752921397">Demander un transport</a>
+                <a className="btn-primary wide" href={`tel:${CONTACT_INFO.phone}`}>Demander un transport</a>
               </div>
             </div>
             <div className="col">

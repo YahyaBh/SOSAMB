@@ -1,12 +1,11 @@
 import Link from "next/link";
+import { CONTACT_INFO } from "@/constants/contact";
 
 export const metadata = {
   title: "Ambulance Privée vs. Ambulance Publique à Salé : Quand Choisir Quoi ?",
   description:
     "Découvrez les différences entre ambulance publique et privée à Salé et apprenez quand choisir chacune pour vos besoins médicaux.",
 };
-
-const PHONE = "+2120752921397";
 
 export default function BlogPost() {
   return (
@@ -92,7 +91,7 @@ export default function BlogPost() {
               </tr>
               <tr>
                 <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>À Appeler</strong></td>
-                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>+212 7 52 92 13 97</strong></td>
+                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>{CONTACT_INFO.phoneDisplay}</strong></td>
               </tr>
             </tbody>
           </table>
@@ -119,17 +118,17 @@ export default function BlogPost() {
               </tr>
               <tr>
                 <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>Transfert d'une clinique à un hôpital</strong></td>
-                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Privée (+212 7 52 92 13 97)</td>
+                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Privée ({CONTACT_INFO.phoneDisplay})</td>
                 <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Transport organisé, rapide et confortable.</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>Sortie de l'hôpital vers le domicile</strong></td>
-                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Privée (+212 7 52 92 13 97)</td>
+                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Privée ({CONTACT_INFO.phoneDisplay})</td>
                 <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Confort et sécurité jusqu'à la maison.</td>
               </tr>
               <tr>
                 <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>Malaise non grave, mais besoin d'aller à la clinique privée</strong></td>
-                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Privée (+212 7 52 92 13 97)</td>
+                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Privée ({CONTACT_INFO.phoneDisplay})</td>
                 <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}>Rapidité et choix de l'établissement.</td>
               </tr>
               <tr>
@@ -157,7 +156,7 @@ export default function BlogPost() {
             Gardez notre numéro en tête pour vos transports programmés ou vos urgences :
           </p>
           <h3 style={{ fontSize: "1.5rem", fontWeight: "600", color: "#1f2937", marginBottom: "1.5rem", textAlign: "left" }}>
-            +212 7 52 92 13 97
+            {CONTACT_INFO.phoneDisplay}
           </h3>
         </section>
 

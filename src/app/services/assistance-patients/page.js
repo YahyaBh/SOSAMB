@@ -1,3 +1,5 @@
+import { CONTACT_INFO } from "@/constants/contact";
+
 export const metadata = {
   title: "Assistance aux patients | SOS Ambulance Rabat-Salé",
   description: "Prise en charge, accompagnement et soins sur place lorsque nécessaire.",
@@ -52,7 +54,7 @@ export default function AssistancePatientsPage() {
 
                 <p>Nous plaçons l’humain au coeur de notre accompagnement, pour plus de sérénité et de confiance.</p>
 
-                <a className="btn-primary wide" href="tel:+2120752921397">Demander une assistance</a>
+                <a className="btn-primary wide" href={`tel:${CONTACT_INFO.phone}`}>Demander une assistance</a>
               </div>
             </div>
             <div className="col">

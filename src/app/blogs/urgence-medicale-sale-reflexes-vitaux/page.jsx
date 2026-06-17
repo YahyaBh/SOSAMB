@@ -1,12 +1,11 @@
 import Link from "next/link";
+import { CONTACT_INFO } from "@/constants/contact";
 
 export const metadata = {
   title: "Urgence Médicale à Salé : Les 3 Réflexes Vitaux Avant l'Ambulance",
   description:
     "Trois réflexes simples pour agir vite et en sécurité à Salé en attendant l'ambulance.",
 };
-
-const PHONE = "+2120752921397";
 
 export default function BlogPost() {
   return (
@@ -31,8 +30,8 @@ export default function BlogPost() {
             <li style={{ marginBottom: "0.25rem" }}>Sapeurs‑Pompiers (15) : accident, incendie ou si le 141 ne répond pas.</li>
             <li style={{ marginBottom: "0.25rem" }}>
               Ambulance privée :{" "}
-              <a href={`tel:${PHONE}`} style={{ color: "#2563eb", textDecoration: "underline" }}>
-                +212 7 52 92 13 97
+              <a href={`tel:${CONTACT_INFO.phone}`} style={{ color: "#2563eb", textDecoration: "underline" }}>
+                {CONTACT_INFO.phoneDisplay}
               </a>{" "}
               pour un transport rapide et orienté.
             </li>
@@ -66,7 +65,7 @@ export default function BlogPost() {
             Notre équipe est joignable 24/7 pour un transfert rapide et confortable vers l'établissement de votre choix.
           </p>
           <a
-            href={`tel:${PHONE}`}
+            href={`tel:${CONTACT_INFO.phone}`}
             style={{
               display: "inline-block",
               backgroundColor: "#2563eb",
@@ -81,7 +80,7 @@ export default function BlogPost() {
             onMouseOver={{ backgroundColor: "#1d4ed8" }}
             onMouseOut={{ backgroundColor: "#2563eb" }}
           >
-            Appeler : +212 7 52 92 13 97
+            Appeler : {CONTACT_INFO.phoneDisplay}
           </a>
         </section>
 

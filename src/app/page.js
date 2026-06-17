@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import "./page.scss";
-
+import { CONTACT_INFO } from "@/constants/contact";
 import { FaWhatsapp } from "react-icons/fa";
 import SplitText from "./textEf";
 import Aos from "aos";
@@ -73,8 +73,8 @@ export default function Home() {
             </p>
 
             <div className="btns">
-              <a href="https://wa.me/212752921397" target="_blank" className="btn2"><FaWhatsapp /> Contacter Nous </a>
-              <a href="tel:+2120752921397" className="btn1">Appeler Maintenant</a>
+              <a href={`https://wa.me/${CONTACT_INFO.phone.replace(/\D/g, '')}`} target="_blank" className="btn2"><FaWhatsapp /> Contacter Nous </a>
+              <a href={`tel:${CONTACT_INFO.phone}`} className="btn1">Appeler Maintenant</a>
             </div>
           </div>
 
@@ -268,9 +268,9 @@ export default function Home() {
           <div className="left">
             <iframe className="gmap_iframe" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=&amp;height=&amp;hl=en&amp;q=Bloc 11 numéro 776 Hay Essalam, 11003 SOS Rabat/Salé AMBULANCE&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             <div className="address">
-              <h3>📍 Adresse : Bloc 11 numéro 776 Hay Essalam, 11003 , Rabat-Salé</h3>
-              <h3>📞 Téléphone : +212 0752921397</h3>
-              <h3>📧 Email : contact@sosambulance.com</h3>
+              <h3>📍 Adresse : {CONTACT_INFO.address}</h3>
+              <h3>📞 Téléphone : <a href={`tel:${CONTACT_INFO.phone}`}>{CONTACT_INFO.phoneDisplay}</a></h3>
+              <h3>📧 Email : <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a></h3>
             </div>
           </div>
           <div className="right">
